@@ -48,6 +48,13 @@ When you create create the app with the installer it automatically create:
 7. Upload your app with filemanager, clone with git... in `/home/<user>/<domain.com>/private/nodeapp`
 8. 🎉 Congratulations you're done!!!
 
+9. Save PM2 & Start Run Forever
+	```bash
+	sudo pm2 save
+	sudo pm2 startup systemd
+	sudo systemctl start pm2-root
+	```
+
 ## FAQ
 
 ### How to change the port if i have a web running
