@@ -33,11 +33,14 @@ When you create create the app with the installer it automatically create:
 	```bash
 	sudo chmod 755 install.sh
 	sudo ./install.sh
+	```
+ 6. Use ** Delete Script Folder**
+	```bash
  	cd ..
 	rm -rf hestiacp-nodejs
 	```
 
-6. 🚀 You are ready to install an App!!!
+7. 🚀 You are ready to install an App!!!
 
 ## How to use
 
