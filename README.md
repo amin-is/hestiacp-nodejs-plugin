@@ -24,7 +24,7 @@ When you create create the app with the installer it automatically create:
 
 4. Clone this repository:
 	```bash
-	cd ~/tmp
+	cd /home
 	git clone https://github.com/amin-is/hestiacp-nodejs-plugin.git
 	cd hestiacp-nodejs-plugin
 	```
