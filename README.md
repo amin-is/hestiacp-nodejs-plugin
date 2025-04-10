@@ -11,23 +11,33 @@ When you create create the app with the installer it automatically create:
 ## How to install
 
 1. Install Node: (Using one of these options)
-   *  [NodeJS](https://github.com/nodesource/distributions)
-   *  [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)
-2. Install [PM2](https://pm2.keymetrics.io/)
-3. Clone this repository:
+   *  [NodeJS](https://github.com/nodesource/distributions) 
+
+	```bash
+ 	sudo curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && sudo apt install nodejs -y
+	node --version && npm --version
+	```
+3. Install [PM2](https://pm2.keymetrics.io/)
+	```bash
+	npm install pm2@latest -g
+	```
+
+4. Clone this repository:
 	```bash
 	cd ~/tmp
-	git clone https://github.com/JLFdzDev/hestiacp-nodejs.git
+	git clone https://github.com/amin-is/hestiacp-nodejs-plugin.git
 	cd hestiacp-nodejs
 	```
 
-4. Use **install.sh**
+5. Use **install.sh**
 	```bash
 	sudo chmod 755 install.sh
 	sudo ./install.sh
+ 	cd ..
+	rm -rf hestiacp-nodejs
 	```
 
-5. 🚀 You are ready to install an App!!!
+6. 🚀 You are ready to install an App!!!
 
 ## How to use
 
@@ -50,6 +60,8 @@ When you create create the app with the installer it automatically create:
 
 9. Save PM2 & Run Forever
 	```bash
+ 	pm2 list
+ 	pm2 restart all
 	sudo pm2 save
 	sudo pm2 startup systemd
 	sudo systemctl start pm2-root
