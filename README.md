@@ -37,7 +37,7 @@ When you create create the app with the installer it automatically create:
  6. **Delete Script Folder**
 	```bash
  	cd ..
-	rm -rf hestiacp-nodejs
+	rm -rf hestiacp-nodejs-plugin
 	```
 
 7. 🚀 You are ready to install an App!!!
